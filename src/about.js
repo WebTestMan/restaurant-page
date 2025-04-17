@@ -1,5 +1,7 @@
 
 const aboutPage = () => {
+
+    const contentArray = [];
     const aboutDiv = document.createElement('div');
     const aboutText = document.createElement('p');
     const textToDisplay = `
@@ -10,11 +12,14 @@ const aboutPage = () => {
     `;
     aboutText.innerText = textToDisplay;
     aboutDiv.appendChild(aboutText);
+    aboutDiv.classList.add('background-image');
+    contentArray.push(aboutDiv);
 
     const pageDiv = document.getElementById('content');
     pageDiv.innerHTML = '';
-    pageDiv.appendChild(aboutDiv);
-    pageDiv.classList.add('background-image');
+    contentArray.forEach((content) => {
+        pageDiv.appendChild(content);
+    });
 
 }
 

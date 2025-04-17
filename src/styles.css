@@ -1,6 +1,8 @@
 :root {
     --background-colour: #e7f7f8f0;
     --text-colour: #4e0489;
+    --alt-background-colour: #05a3aff9;
+    --alt-text-colour: #d3a9f5;
 }
 
 #content {
@@ -43,8 +45,26 @@ button {
     background-color: var(--text-colour);
 }
 
+button:hover {
+    color: var(--alt-text-colour);
+    background-color: var(--alt-background-colour);
+    border: none;
+    padding: 10px 50px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
 .background-image {
-    background-image: './restaurant.jpg';
+    background-image: url('./restaurant.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 800px;
+    max-height: fit-content;
+
 }
