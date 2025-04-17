@@ -42,3 +42,9 @@ button {
     color: var(--background-colour);
     background-color: var(--text-colour);
 }
+
+.background-image {
+    background-image: './restaurant.jpg';
+    background-repeat: no-repeat;
+    background-size: cover;
+}
