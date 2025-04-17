@@ -1,3 +1,27 @@
+:root {
+    --background-colour: #b7eff3;
+    --text-colour: #5a05a0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#content div {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 body {
-    background-color: rebeccapurple;
+    font-family: 'Courier New', Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+}
+
+img {
+    max-height: 600px;
+    max-width: fit-content;
 }
