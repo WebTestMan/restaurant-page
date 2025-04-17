@@ -9,18 +9,17 @@ function homepageLoad() {
     pageHeadingDiv.appendChild(pageHeading);
     pageDiv.appendChild(pageHeadingDiv);
 
-    const imgDiv = document.createElement('div');
-    const imgDisplay = document.createElement('img');
-    imgDisplay.setAttribute('src', restaurantImage);
-    imgDiv.appendChild(imgDisplay);
-    pageDiv.appendChild(imgDiv);
-
-
     const textDiv = document.createElement('div');
     const textPara = document.createElement('p');
     textPara.innerText = 'Mixed up is the brainchild of Mark GH. A restaurant where everything is fusion, we take different flavours and mix them up to create new and unique dishes.'
     textDiv.appendChild(textPara);
     pageDiv.appendChild(textDiv);
+
+    const imgDiv = document.createElement('div');
+    const imgDisplay = document.createElement('img');
+    imgDisplay.setAttribute('src', restaurantImage);
+    imgDiv.appendChild(imgDisplay);
+    pageDiv.appendChild(imgDiv);
 
 }
 

@@ -1,6 +1,6 @@
 :root {
-    --background-colour: #b7eff3;
-    --text-colour: #5a05a0;
+    --background-colour: #e7f7f8f0;
+    --text-colour: #4e0489;
 }
 
 #content {
@@ -15,6 +15,10 @@
     text-align: center;
 }
 
+* {
+    padding: 6px;
+}
+
 body {
     font-family: 'Courier New', Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: var(--background-colour);
@@ -24,4 +28,17 @@ body {
 img {
     max-height: 600px;
     max-width: fit-content;
+    opacity: 0.5;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 4em;
+}
+
+button {
+    padding: 6px 40px;
+    border-radius: 6px;
+    color: var(--background-colour);
+    background-color: var(--text-colour);
 }
